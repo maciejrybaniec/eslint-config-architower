@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "publish:ci": "",
+    "release:ci": "semantic-release",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -20,11 +20,10 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
-    "@commitlint/config-conventional": "^17.4.4",
-    "@release-it/conventional-changelog": "^5.1.1",
     "commitlint-config-gitmoji": "^2.3.1",
-    "conventional-changelog-gitmoji-config": "^1.4.7",
+    "gitmoji-cli": "^8.0.0",
     "husky": "8.0.3",
-    "release-it": "^15.8.0"
+    "semantic-release": "^20.1.1",
+    "semantic-release-config-gitmoji": "^1.4.3"
   }
 }
