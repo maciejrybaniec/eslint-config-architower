@@ -1,8 +1,21 @@
+const { createConfig } = require('semantic-release-config-gitmoji/lib/createConfig');
+
+const config = createConfig({
+  monorepo: false
+});
+
+module.exports = config;
+
 module.exports = {
+  ...config,
   branches: [
     "main",
-    { name: "next", channel: "next", prerelease: "rc" },
-    { name: "develop", prerelease: true },
+    { name: "develop", channel: "next", prerelease: "rc" },
   ],
-  extends: ["semantic-release-config-gitmoji"],
+  plugins: [
+    ...config.plugins,
+    ["@semantic-release/git", {
+      "message": ":rocket: build(release): ${nextRelease.version} [skip ci]"
+    }]
+  ]
 };
