@@ -39,6 +39,7 @@ jobs:
         with:
           node-version: 18.12.1
           cache: "pnpm"
+          cache-dependency-path: pnpm-lock.yaml
 
       # - name: Get pnpm store directory
       #   id: pnpm-cache
@@ -55,7 +56,7 @@ jobs:
       #       ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Releasing
         run: pnpm release:ci
