@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     ...config.plugins,
     ["@semantic-release/git", {
-      "message": ":rocket: build(release): ${nextRelease.version} [skip ci]"
+      "message": ":bookmark: build(release): ${nextRelease.version} [skip ci]"
     }]
   ]
 };
