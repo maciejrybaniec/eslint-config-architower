@@ -7,7 +7,12 @@
     "release:ci": "semantic-release --ci",
     "prepare": "husky install"
   },
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "architower"
+  ],
   "maintainers": [
     {
       "name": "Mateusz Gostański",
