@@ -12,7 +12,7 @@ module.exports = {
     "plugin:no-unsanitized/DOM",
     "plugin:promise/recommended",
     "plugin:sonarjs/recommended",
-    resolve("./prettier.js"),
+    require.resolve("./prettier.js"),
   ],
 
   parserOptions: {
@@ -32,8 +32,6 @@ module.exports = {
     "write-good-comments",
   ],
 
-  root: true,
-
   rules: {
     "no-secrets/no-secrets": "error",
     "no-caller": "error",
@@ -51,14 +49,28 @@ module.exports = {
     "@microsoft/sdl/no-postmessage-star-origin": "error",
     "@microsoft/sdl/no-winjs-html-unsafe": "error",
     "write-good-comments/write-good-comments": "warn",
-    // TODO: Find out why adjunct turn it off
-    // unicorn/no-array-for-each
-    // unicorn/no-fn-reference-in-iterator
-    // unicorn/no-array-for-each
-    // unicorn/no-reduce
-    // unicorn/no-null
-    // unicorn/prefer-number-properties
-    // unicorn/prefer-optional-catch-binding
-    // unicorn/prevent-abbreviations
+    "unicorn/filename-case": [
+      "error",
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+        },
+        ignore: [
+          "^(README|LICENSE|CHANGELOG)\\.md$",
+          "pnpm-lock\\.yaml$",
+          "package-lock\\.json$",
+          ".*\\.config\\.(js|cjs|mjs)$",
+        ],
+      },
+    ],
+    // Array.prototype.forEach is fine
+    "unicorn/no-array-for-each": "off",
+    // Array.prototype.reduce & reduceRight are fine
+    "unicorn/no-array-reduce": "off",
+    // This rule is too strict & require a lot of configuring to the project's specific needs
+    "unicorn/prevent-abbreviations": "off",
+    // Don't force to use undefined everywhere
+    "unicorn/no-null": "warn",
   },
 }

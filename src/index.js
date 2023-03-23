@@ -1,19 +1,18 @@
 module.exports = {
   extends: [
-    resolve("./ecma.js"),
-    resolve("./typescript.js"),
+    require.resolve("./ecma.js"),
+    require.resolve("./typescript.js"),
     "plugin:jsonc/recommended-with-jsonc",
-    resolve("./prettier.js"),
+    require.resolve("./prettier.js"),
   ],
 
   plugins: ["@html-eslint", "html", "markdown", "@typescript-eslint"],
-
-  root: true,
 
   overrides: [
     {
       files: ["*.json", "*.json5", "*.jsonc"],
       parser: "jsonc-eslint-parser",
+      excludedFiles: ["package-lock.json"],
     },
     {
       extends: ["plugin:@html-eslint/recommended"],
@@ -27,6 +26,7 @@ module.exports = {
     {
       extends: ["plugin:yml/standard"],
       files: ["*.yml", "*.yaml"],
+      excludedFiles: ["pnpm-lock.yaml"],
       parser: "yaml-eslint-parser",
     },
   ],

@@ -4,7 +4,7 @@ module.exports = {
   overrides: [
     {
       extends: [
-        "plugin:@typescript-eslint/recommended-type-checked",
+        "plugin:@typescript-eslint/recommended",
         "plugin:etc/recommended",
       ],
       files: ["**.ts", "**.tsx"],

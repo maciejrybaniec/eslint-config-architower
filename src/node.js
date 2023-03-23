@@ -1,17 +1,20 @@
 module.exports = {
   env: {
     node: true,
+    browser: false,
   },
 
   extends: [
-    resolve("./ecma.js"),
-    resolve("./typescript.js"),
+    require.resolve("./ecma.js"),
+    require.resolve("./typescript.js"),
     "plugin:n/recommended",
     "plugin:security/recommended",
-    resolve("./prettier.js"),
+    require.resolve("./prettier.js"),
   ],
 
   rules: {
     "unicorn/prefer-string-replace-all": "error",
+    // Still not all JS files are modules
+    "unicorn/prefer-module": "off",
   },
 }
