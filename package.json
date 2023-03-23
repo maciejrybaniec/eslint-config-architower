@@ -29,6 +29,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "prettier": "@architower/prettier-config",
   "dependencies": {
     "eslint": "^8.36.0",

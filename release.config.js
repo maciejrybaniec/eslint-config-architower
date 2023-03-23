@@ -1,6 +1,6 @@
-const {
-  createConfig,
-} = require("semantic-release-config-gitmoji/lib/createConfig")
+// prettier-ignore
+// eslint-disable-next-line n/no-unpublished-require -- This is a dev dependency
+const { createConfig } = require("semantic-release-config-gitmoji/lib/createConfig")
 
 const config = createConfig({
   monorepo: false,

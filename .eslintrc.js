@@ -1,3 +1,5 @@
 module.exports = {
-  extends: [resolve("./src/index.js")],
+  extends: [require.resolve("./src/node.js")],
+
+  root: true,
 }
