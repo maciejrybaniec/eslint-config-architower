@@ -5,7 +5,7 @@ module.exports = {
   },
 
   extends: [
-    'eslint:recommended',
+    "eslint:recommended",
     "plugin:eslint-comments/recommended",
     "plugin:compat/recommended",
     "plugin:unicorn/recommended",
@@ -18,7 +18,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
   },
 

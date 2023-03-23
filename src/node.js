@@ -12,6 +12,6 @@ module.exports = {
   ],
 
   rules: {
-    'unicorn/prefer-string-replace-all': 'error',
-  }
+    "unicorn/prefer-string-replace-all": "error",
+  },
 }

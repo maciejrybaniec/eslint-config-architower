@@ -8,7 +8,8 @@ Our shareable config & rules for ESLint
 
 ## How to use it?
 
-1.Add package & necessary dependencies (such as `ESlint` & `Prettier`) to your repository, for eg. with `pnpm` or your package manager of choice:
+1.Add package & necessary dependencies (such as `ESlint` & `Prettier`) to your
+repository, for eg. with `pnpm` or your package manager of choice:
 
 ```bash
 pnpm i -D eslint prettier eslint-config-architower
@@ -18,15 +19,14 @@ pnpm i -D eslint prettier eslint-config-architower
 
 ```js
 module.exports = {
-  extends: [
-    "architower"
-  ],
+  extends: ["architower"],
 }
 ```
 
 ### Using with Node.js
 
-When you want to use our config for Node.js based solution, please additionally install those plugins:
+When you want to use our config for Node.js based solution, please additionally
+install those plugins:
 
 ```bash
 pnpm add -D eslint-plugin-n eslint-plugin-security
@@ -36,15 +36,14 @@ And change config extension to:
 
 ```js
 module.exports = {
-  extends: [
-    "architower/node"
-  ],
+  extends: ["architower/node"],
 }
 ```
 
 ### Using with VSCode
 
-To get vscode-eslint support, we need to add the following in vscode settings (`.vscode/settings.json`).
+To get vscode-eslint support, we need to add the following in vscode settings
+(`.vscode/settings.json`).
 
 ```json
 {
@@ -84,7 +83,8 @@ To get vscode-eslint support, we need to add the following in vscode settings (`
 
 ## Development
 
-At first make a copy of this repository and install all dependencies using `pnpm`:
+At first make a copy of this repository and install all dependencies using
+`pnpm`:
 
 ```bash
 git clone git@github.com:ArchiTower/eslint-config-architower.git
@@ -92,27 +92,36 @@ cd eslint-config-architower
 pnpm i
 ```
 
-Then, create a branch, make your changes in code, commit it following [gitmoji](https://gitmoji.dev/) & [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) styles.
+Then, create a branch, make your changes in code, commit it following
+[gitmoji](https://gitmoji.dev/) &
+[conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) styles.
 
-After that, push it and then create a [Pull Request](https://github.com/ArchiTower/eslint-config-architower/pulls) with target to `develop` branch.
+After that, push it and then create a
+[Pull Request](https://github.com/ArchiTower/eslint-config-architower/pulls)
+with target to `develop` branch.
 
 ### Branching
 
 In our repositories we're following the simple solution:
 
-- `main` branch represents stable releases of the libraries or production environment of released applications
-- `develop` branch is for release candidates, betas etc. Here we developing solution - library or app.
+- `main` branch represents stable releases of the libraries or production
+  environment of released applications
+- `develop` branch is for release candidates, betas etc. Here we developing
+  solution - library or app.
 
 ## License
 
 [MIT](./LICENSE.md)
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/eslint-config-architower?style=flat-square
+
+[npm-version-src]:
+  https://img.shields.io/npm/v/eslint-config-architower?style=flat-square
 [npm-version-href]: https://npmjs.com/package/eslint-config-architower
-
-[npm-downloads-src]: https://img.shields.io/npm/dm/eslint-config-architower?style=flat-square
+[npm-downloads-src]:
+  https://img.shields.io/npm/dm/eslint-config-architower?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/eslint-config-architower
-
-[github-actions-src]: https://img.shields.io/github/actions/workflow/status/ArchiTower/eslint-config-architower/release.yml?branch=main&style=flat-square
-[github-actions-href]: https://github.com/ArchiTower/eslint-config-architower/actions/workflows/release.yml
+[github-actions-src]:
+  https://img.shields.io/github/actions/workflow/status/ArchiTower/eslint-config-architower/release.yml?branch=main&style=flat-square
+[github-actions-href]:
+  https://github.com/ArchiTower/eslint-config-architower/actions/workflows/release.yml

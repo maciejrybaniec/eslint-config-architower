@@ -1,24 +1,22 @@
 module.exports = {
-  plugins: [
-    '@typescript-eslint'
-  ],
+  plugins: ["@typescript-eslint"],
 
   overrides: [
     {
       extends: [
-        'plugin:@typescript-eslint/recommended-type-checked',
-        "plugin:etc/recommended"
+        "plugin:@typescript-eslint/recommended-type-checked",
+        "plugin:etc/recommended",
       ],
-      files: ['**.ts', '**.tsx'],
-      parser: '@typescript-eslint/parser',
+      files: ["**.ts", "**.tsx"],
+      parser: "@typescript-eslint/parser",
       parserOptions: {
         tsconfigRootDir: __dirname,
-        project: ['./tsconfig.json'],
+        project: ["./tsconfig.json"],
       },
       rules: {
-        '@typescript-eslint/naming-convention': 'off',
-        '@typescript-eslint/explicit-function-return-type': [
-          'error',
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+          "error",
           {
             allowExpressions: true,
             allowTypedFunctionExpressions: true,

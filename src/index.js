@@ -6,12 +6,7 @@ module.exports = {
     resolve("./prettier.js"),
   ],
 
-  plugins: [
-    "@html-eslint",
-    "html",
-    "markdown",
-    '@typescript-eslint'
-  ],
+  plugins: ["@html-eslint", "html", "markdown", "@typescript-eslint"],
 
   root: true,
 
@@ -21,22 +16,18 @@ module.exports = {
       parser: "jsonc-eslint-parser",
     },
     {
-      extends: [
-        "plugin:@html-eslint/recommended"
-      ],
+      extends: ["plugin:@html-eslint/recommended"],
       files: ["*.html"],
       parser: "@html-eslint/parser",
     },
     {
       files: ["**/*.md"],
-      processor: "markdown/markdown"
+      processor: "markdown/markdown",
     },
     {
-      extends: [
-        "plugin:yml/standard",
-      ],
+      extends: ["plugin:yml/standard"],
       files: ["*.yml", "*.yaml"],
       parser: "yaml-eslint-parser",
     },
-  ]
+  ],
 }
