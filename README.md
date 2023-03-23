@@ -23,20 +23,40 @@ module.exports = {
 }
 ```
 
-### Using with Node.js
+### Without Prettier
 
-When you want to use our config for Node.js based solution, please additionally
-install those plugins:
+When, you don't want to use prettier, you can easily make a little different config:
 
-```bash
-pnpm add -D eslint-plugin-n eslint-plugin-security
+```js
+module.exports = {
+  extends: [
+    "architower/ecma",
+    "architower/typescript",
+    "architower/html",
+    "architower/json",
+    "architower/yaml",
+    "architower/markdown",
+  ],
+}
 ```
 
-And change config extension to:
+### Using with Node.js
+
+When you want to use our config for Node.js based solution, please change config extension to:
 
 ```js
 module.exports = {
   extends: ["architower/node"],
+}
+```
+
+Then, define node engine version in `package.json`:
+
+```json
+{
+  "engines": {
+    "node": ">=14.0.0"
+  },
 }
 ```
 
@@ -51,11 +71,14 @@ To get vscode-eslint support, we need to add the following in vscode settings
   "eslint.validate": [
     "javascript",
     "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
     "json",
     "jsonc",
     "json5",
     "yaml",
-    "html" // Add "html" to enable linting `.html` files.
+    "html"
   ]
 }
 ```
