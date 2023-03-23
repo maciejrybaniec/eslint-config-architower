@@ -24,6 +24,64 @@ module.exports = {
 }
 ```
 
+### Using with Node.js
+
+When you want to use our config for Node.js based solution, please additionally install those plugins:
+
+```bash
+pnpm add -D eslint-plugin-n eslint-plugin-security
+```
+
+And change config extension to:
+
+```js
+module.exports = {
+  extends: [
+    "architower/node"
+  ],
+}
+```
+
+### Using with VSCode
+
+To get vscode-eslint support, we need to add the following in vscode settings (`.vscode/settings.json`).
+
+```json
+{
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "json5",
+    "yaml",
+    "html" // Add "html" to enable linting `.html` files.
+  ]
+}
+```
+
+## Used rulesets & plugins
+
+- [eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
+- [unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+- [compat](https://github.com/amilajack/eslint-plugin-compat)
+- [jsonc](https://github.com/ota-meshi/eslint-plugin-jsonc)
+- [yml](https://github.com/ota-meshi/eslint-plugin-yml)
+- [no-secrets](https://github.com/nickdeis/eslint-plugin-no-secrets)
+- [html-eslint](https://yeonjuan.github.io/html-eslint/docs)
+- [html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
+- [markdown](https://github.com/eslint/eslint-plugin-markdown)
+- [prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration)
+- [no-unsanitized](https://github.com/mozilla/eslint-plugin-no-unsanitized)
+- [promise](https://github.com/eslint-community/eslint-plugin-promise)
+- [sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+- [n](https://github.com/eslint-community/eslint-plugin-n)
+- [security](https://github.com/eslint-community/eslint-plugin-security)
+- [etc](https://github.com/cartant/eslint-plugin-etc)
+- [@microsoft/sdl](https://github.com/microsoft/eslint-plugin-sdl)
+- [write-good-comments](https://github.com/kantord/eslint-plugin-write-good-comments)
+
 ## Development
 
 At first make a copy of this repository and install all dependencies using `pnpm`:
@@ -33,6 +91,17 @@ git clone git@github.com:ArchiTower/eslint-config-architower.git
 cd eslint-config-architower
 pnpm i
 ```
+
+Then, create a branch, make your changes in code, commit it following [gitmoji](https://gitmoji.dev/) & [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) styles.
+
+After that, push it and then create a [Pull Request](https://github.com/ArchiTower/eslint-config-architower/pulls) with target to `develop` branch.
+
+### Branching
+
+In our repositories we're following the simple solution:
+
+- `main` branch represents stable releases of the libraries or production environment of released applications
+- `develop` branch is for release candidates, betas etc. Here we developing solution - library or app.
 
 ## License
 
