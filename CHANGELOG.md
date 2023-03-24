@@ -6,6 +6,35 @@
 ### ✨ Features
 
 * split config into smaller parts ([68ede66](https://github.com/ArchiTower/eslint-config-architower/commit/68ede66))
+* wip on vitest config ([14f4f60](https://github.com/ArchiTower/eslint-config-architower/commit/14f4f60))
+
+
+### 🎫 Chores
+
+* **release**: v1.1.0-beta.2 [skip ci] ([c2eedfa](https://github.com/ArchiTower/eslint-config-architower/commit/c2eedfa))
+* upgrade deps ([8339580](https://github.com/ArchiTower/eslint-config-architower/commit/8339580))
+
+
+### 🐛 Bug Fixes
+
+* problem with TSConfig ([71b9d5b](https://github.com/ArchiTower/eslint-config-architower/commit/71b9d5b))
+
+
+### 📝 Documentation
+
+* update README.md ([4171714](https://github.com/ArchiTower/eslint-config-architower/commit/4171714))
+
+
+### 🔧 Continuous Integration
+
+* add check with ESLint before release ([ac0705a](https://github.com/ArchiTower/eslint-config-architower/commit/ac0705a))
+
+# [1.1.0-beta.2](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2023-03-24)
+
+
+### ✨ Features
+
+* split config into smaller parts ([68ede66](https://github.com/ArchiTower/eslint-config-architower/commit/68ede66))
 
 
 ### 🎫 Chores
