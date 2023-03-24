@@ -9,7 +9,7 @@ Our shareable config & rules for ESLint
 ## How to use it?
 
 1.Add package & necessary dependencies (such as `ESlint` & `Prettier`) to your
-repository, for eg. with `pnpm` or your package manager of choice:
+repository, for, e.g. with `pnpm` or your package manager of choice:
 
 ```bash
 pnpm i -D eslint prettier eslint-config-architower
@@ -25,7 +25,8 @@ module.exports = {
 
 ### Without Prettier
 
-When, you don't want to use prettier, you can easily make a little different config:
+When you don't want to use prettier, you can easily make a little different
+config:
 
 ```js
 module.exports = {
@@ -42,7 +43,8 @@ module.exports = {
 
 ### Using with Node.js
 
-When you want to use our config for Node.js based solution, please change config extension to:
+When you want to use our config for Node.js based solution, please change the
+config extension to:
 
 ```js
 module.exports = {
@@ -50,13 +52,60 @@ module.exports = {
 }
 ```
 
-Then, define node engine version in `package.json`:
+Then, define the node engine version in `package.json`:
 
 ```json
 {
   "engines": {
     "node": ">=14.0.0"
-  },
+  }
+}
+```
+
+### Using with Vitest
+
+How do you want to structurize the unit & integration tests written using Vitest
+in your project? Even in our projects, we use different approaches. Sometimes
+unit tests have their extension, and integrations have their own. Sometimes
+there share the file extensions. To provide an elastic way to configure it, we
+created a dedicated configuration for Vitest, which you can use via `overrides`:
+
+```js
+module.exports = {
+  root: true,
+
+  extends: ["architower"],
+
+  overrides: [
+    {
+      files: ["**/*.{test,integration}.{js,ts}", "**/*Builder.ts"],
+      extends: ["architower/vitest"],
+    },
+  ],
+}
+```
+
+### Using with Playwright
+
+We use the same model as Vitest with Playwright - because sometimes End-To-End
+test suites are entirely different apps in the same monorepo and sometimes
+another repository. Still, in many projects, E2Es are together with the app's
+production code in a specific directory. So to provide flexible configuration
+for all those possibilities, we create separate config just with rules for
+Playwright. You can use it precisely on your chosen location, extension, etc.
+
+```js
+module.exports = {
+  root: true,
+
+  extends: ["architower"],
+
+  overrides: [
+    {
+      files: ["**/*.spec.ts"],
+      extends: ["architower/playwright"],
+    },
+  ],
 }
 ```
 
@@ -108,8 +157,7 @@ To get vscode-eslint support, we need to add the following in vscode settings
 
 ## Development
 
-At first make a copy of this repository and install all dependencies using
-`pnpm`:
+First make a copy of this repository and install all dependencies using `pnpm`:
 
 ```bash
 git clone git@github.com:ArchiTower/eslint-config-architower.git
@@ -123,16 +171,16 @@ Then, create a branch, make your changes in code, commit it following
 
 After that, push it and then create a
 [Pull Request](https://github.com/ArchiTower/eslint-config-architower/pulls)
-with target to `develop` branch.
+with the target to `develop` branch.
 
 ### Branching
 
-In our repositories we're following the simple solution:
+In our repositories, we're following the simple solution:
 
 - `main` branch represents stable releases of the libraries or production
   environment of released applications
-- `develop` branch is for release candidates, betas etc. Here we developing
-  solution - library or app.
+- `develop` branch is for releasing candidates, betas, etc. Here we are
+  developing a solution - a library or app.
 
 ## License
 
