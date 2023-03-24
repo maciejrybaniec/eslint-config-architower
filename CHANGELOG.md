@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.1.0-beta.6](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.5...v1.1.0-beta.6) (2023-03-24)
+
+
+### ✨ Features
+
+* use vitest plugin ([194ba7f](https://github.com/ArchiTower/eslint-config-architower/commit/194ba7f))
+
+
+### 🐛 Bug Fixes
+
+* bug in workers ([9af67d6](https://github.com/ArchiTower/eslint-config-architower/commit/9af67d6))
+
 # [1.1.0-beta.5](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.4...v1.1.0-beta.5) (2023-03-24)
 
 
