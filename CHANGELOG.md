@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0-beta.4](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.3...v1.1.0-beta.4) (2023-03-24)
+
+
+### 🐛 Bug Fixes
+
+* etc missing prefix in TS config ([94ef2c9](https://github.com/ArchiTower/eslint-config-architower/commit/94ef2c9))
+
 # [1.1.0-beta.3](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.2...v1.1.0-beta.3) (2023-03-24)
 
 
