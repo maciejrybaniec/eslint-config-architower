@@ -1,4 +1,6 @@
 module.exports = {
+  extends: ["plugin:playwright/playwright-test"],
+
   rules: {
     "id-length": "off",
     "new-cap": "off",
@@ -8,5 +10,11 @@ module.exports = {
     "unicorn/prefer-dom-node-text-content": "warn",
     "@typescript-eslint/restrict-template-expressions": "off",
     "eslint-comments/require-description": "off",
+    "playwright/prefer-to-be": "error",
+    "playwright/prefer-to-have-length": "error",
+    "playwright/require-top-level-describe": [
+      "error",
+      { maxTopLevelDescribes: 5 },
+    ],
   },
 }
