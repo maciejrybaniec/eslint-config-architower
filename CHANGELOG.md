@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.1.0-beta.5](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.4...v1.1.0-beta.5) (2023-03-24)
+
+
+### ✨ Features
+
+* new configs for playwright, workers ([7449f8b](https://github.com/ArchiTower/eslint-config-architower/commit/7449f8b))
+* tune up paths & minor rules ([f034961](https://github.com/ArchiTower/eslint-config-architower/commit/f034961))
+
 # [1.1.0-beta.4](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.3...v1.1.0-beta.4) (2023-03-24)
 
 
