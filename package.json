@@ -10,6 +10,7 @@
     "./html": "./src/html.js",
     "./yaml": "./src/yaml.js",
     "./json": "./src/json.js",
+    "./vitest": "./src/vitest.js",
     "./markdown": "./src/markdown.js",
     "./prettier": "./src/prettier.js",
     "./typescript": "./src/typescript.js"
