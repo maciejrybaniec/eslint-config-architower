@@ -1,5 +1,32 @@
 # Changelog
 
+# [1.1.0-beta.2](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2023-03-24)
+
+
+### ✨ Features
+
+* split config into smaller parts ([68ede66](https://github.com/ArchiTower/eslint-config-architower/commit/68ede66))
+
+
+### 🎫 Chores
+
+* upgrade deps ([a8df782](https://github.com/ArchiTower/eslint-config-architower/commit/a8df782))
+
+
+### 🐛 Bug Fixes
+
+* problem with TSConfig ([b060b14](https://github.com/ArchiTower/eslint-config-architower/commit/b060b14))
+
+
+### 📝 Documentation
+
+* update README.md ([4171714](https://github.com/ArchiTower/eslint-config-architower/commit/4171714))
+
+
+### 🔧 Continuous Integration
+
+* add check with ESLint before release ([c2d35bc](https://github.com/ArchiTower/eslint-config-architower/commit/c2d35bc))
+
 # [1.1.0-beta.1](https://github.com/ArchiTower/eslint-config-architower/compare/v1.0.0...v1.1.0-beta.1) (2023-03-23)
 
 
