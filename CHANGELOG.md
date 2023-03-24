@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0-beta.11](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.10...v1.1.0-beta.11) (2023-03-24)
+
+
+### 🐛 Bug Fixes
+
+* improve playwright config ([bce7d37](https://github.com/ArchiTower/eslint-config-architower/commit/bce7d37))
+
 # [1.1.0-beta.10](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.9...v1.1.0-beta.10) (2023-03-24)
 
 
