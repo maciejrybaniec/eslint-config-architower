@@ -22,6 +22,9 @@ module.exports = {
     "@typescript-eslint/no-empty-function": "warn",
     "@typescript-eslint/no-confusing-void-expression": "warn",
     "@typescript-eslint/no-redundant-type-constituents": "warn",
+    "@typescript-eslint/require-await": "warn",
+    // In unit & integration tests often creates a lot of noise
+    "@typescript-eslint/explicit-function-return-type": "off",
     "unicorn/no-array-callback-reference": "off",
     "unicorn/consistent-function-scoping": "off",
     "unicorn/no-array-reduce": "warn",
@@ -31,10 +34,12 @@ module.exports = {
     "vitest/no-alias-methods": "error",
     "vitest/no-conditional-expect": "error",
     "vitest/no-disabled-tests": "warn",
-    "vitest/no-done-callback": "error",
     "vitest/no-duplicate-hooks": "error",
     "vitest/no-focused-tests": "error",
-    "vitest/no-standalone-expect": "error",
     "vitest/no-test-return-statement": "error",
+    // Warning due to test abstractions could be including a lot of common expects
+    "vitest/no-standalone-expect": "warn",
+    // Messy rule when you're using test context
+    "vitest/no-done-callback": "off",
   },
 }

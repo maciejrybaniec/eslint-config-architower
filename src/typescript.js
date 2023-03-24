@@ -23,6 +23,15 @@ module.exports = {
             allowTypedFunctionExpressions: true,
             allowHigherOrderFunctions: true,
             allowConciseArrowFunctionExpressionsStartingWithVoid: true,
+            allowIIFEs: true,
+          },
+        ],
+        "@typescript-eslint/no-floating-promises": "warn",
+        "@typescript-eslint/restrict-template-expressions": [
+          "error",
+          {
+            allowNumber: true,
+            allowNullish: true,
           },
         ],
         "etc/no-commented-out-code": "warn",
