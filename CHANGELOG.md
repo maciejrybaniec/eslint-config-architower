@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0-beta.8](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.7...v1.1.0-beta.8) (2023-03-24)
+
+
+### ✨ Features
+
+* optimize vitest rules ([3682c0d](https://github.com/ArchiTower/eslint-config-architower/commit/3682c0d))
+
 # [1.1.0-beta.7](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.6...v1.1.0-beta.7) (2023-03-24)
 
 
