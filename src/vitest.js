@@ -11,6 +11,8 @@ module.exports = {
     "multiline-comment-style": "off",
     "max-params": ["error", 5],
     "max-statements": ["warn", 20],
+    // Warning because sometimes gives false positives
+    "no-secrets/no-secrets": "warn",
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-argument": "warn",
     "@typescript-eslint/no-unsafe-call": "warn",
@@ -31,7 +33,6 @@ module.exports = {
     "vitest/consistent-test-it": "error",
     "vitest/max-expects": ["error", { max: 10 }],
     "vitest/max-nested-describe": ["error", { max: 5 }],
-    "vitest/no-alias-methods": "error",
     "vitest/no-conditional-expect": "error",
     "vitest/no-disabled-tests": "warn",
     "vitest/no-duplicate-hooks": "error",
@@ -41,5 +42,6 @@ module.exports = {
     "vitest/no-standalone-expect": "warn",
     // Messy rule when you're using test context
     "vitest/no-done-callback": "off",
+    "vitest/no-alias-methods": "off",
   },
 }
