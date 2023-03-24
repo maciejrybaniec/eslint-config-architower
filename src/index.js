@@ -8,4 +8,13 @@ module.exports = {
     require.resolve("./yaml.js"),
     require.resolve("./prettier.js"),
   ],
+
+  overrides: [
+    {
+      files: ["*.config.(js|cjs|mjs)", ".eslintrc.(js|cjs)"],
+      rules: {
+        "unicorn/prefer-module": "off",
+      },
+    },
+  ],
 }
