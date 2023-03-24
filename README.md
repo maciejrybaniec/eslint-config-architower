@@ -103,6 +103,7 @@ To get vscode-eslint support, we need to add the following in vscode settings
 - [etc](https://github.com/cartant/eslint-plugin-etc)
 - [@microsoft/sdl](https://github.com/microsoft/eslint-plugin-sdl)
 - [write-good-comments](https://github.com/kantord/eslint-plugin-write-good-comments)
+- [vitest](https://github.com/veritem/eslint-plugin-vitest)
 
 ## Development
 

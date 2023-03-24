@@ -1,4 +1,6 @@
 module.exports = {
+  extends: ["plugin:vitest/recommended"],
+
   rules: {
     "unicorn/no-unsafe-regex": "off",
     "max-lines": "off",
@@ -23,5 +25,16 @@ module.exports = {
     "unicorn/no-array-callback-reference": "off",
     "unicorn/consistent-function-scoping": "off",
     "unicorn/no-array-reduce": "warn",
+    "vitest/consistent-test-it": "error",
+    "vitest/max-expects": ["error", 10],
+    "vitest/max-nested-describe": ["error", 5],
+    "vitest/no-alias-methods": "error",
+    "vitest/no-conditional-expect": "error",
+    "vitest/no-disabled-tests": "warn",
+    "vitest/no-done-callback": "error",
+    "vitest/no-duplicate-hooks": "error",
+    "vitest/no-focused-tests": "error",
+    "vitest/no-standalone-expect": "error",
+    "vitest/no-test-return-statement": "error",
   },
 }
