@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0-beta.9](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.8...v1.1.0-beta.9) (2023-03-24)
+
+
+### ✨ Features
+
+* another polishing for vitest ([989fc66](https://github.com/ArchiTower/eslint-config-architower/commit/989fc66))
+
 # [1.1.0-beta.8](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.7...v1.1.0-beta.8) (2023-03-24)
 
 
