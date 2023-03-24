@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0-beta.7](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.6...v1.1.0-beta.7) (2023-03-24)
+
+
+### 🐛 Bug Fixes
+
+* wrong passing params in vitest ([b9ba3c1](https://github.com/ArchiTower/eslint-config-architower/commit/b9ba3c1))
+
 # [1.1.0-beta.6](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.5...v1.1.0-beta.6) (2023-03-24)
 
 
