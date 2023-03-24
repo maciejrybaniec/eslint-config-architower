@@ -10,6 +10,8 @@ module.exports = {
     "unicorn/prefer-dom-node-text-content": "warn",
     "@typescript-eslint/restrict-template-expressions": "off",
     "eslint-comments/require-description": "off",
+    // Causing false positives with some selectors
+    "no-secrets/no-secrets": "warn",
     "playwright/prefer-to-be": "error",
     "playwright/prefer-to-have-length": "error",
     "playwright/require-top-level-describe": [
