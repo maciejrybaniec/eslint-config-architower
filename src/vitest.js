@@ -1,12 +1,27 @@
 module.exports = {
-  overrides: [
-    {
-      files: ["**/*.test.js"],
-      rules: {
-        "unicorn/no-unsafe-regex": "off",
-        "max-lines": "off",
-        "max-lines-per-function": "off",
-      },
-    },
-  ],
+  rules: {
+    "unicorn/no-unsafe-regex": "off",
+    "max-lines": "off",
+    "max-lines-per-function": "off",
+    "max-classes-per-file": "off",
+    "max-nested-callbacks": ["warn", { max: 6 }],
+    "line-comment-position": "warn",
+    "multiline-comment-style": "off",
+    "max-params": ["error", 5],
+    "max-statements": ["warn", 20],
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-argument": "warn",
+    "@typescript-eslint/no-unsafe-call": "warn",
+    "@typescript-eslint/no-unsafe-member-access": "warn",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/unbound-method": "warn",
+    "@typescript-eslint/no-misused-promises": "error",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-confusing-void-expression": "warn",
+    "@typescript-eslint/no-redundant-type-constituents": "warn",
+    "unicorn/no-array-callback-reference": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/no-array-reduce": "warn",
+  },
 }
