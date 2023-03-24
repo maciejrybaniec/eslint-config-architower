@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0-beta.3](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.2...v1.1.0-beta.3) (2023-03-24)
+
+
+### ✨ Features
+
+* more progress on vitest ([732f717](https://github.com/ArchiTower/eslint-config-architower/commit/732f717))
+
 # [1.1.0-beta.2](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2023-03-24)
 
 
