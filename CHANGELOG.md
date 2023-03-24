@@ -1,5 +1,22 @@
 # Changelog
 
+# [1.1.0](https://github.com/ArchiTower/eslint-config-architower/compare/v1.0.0...v1.1.0) (2023-03-24)
+
+
+### ✨ Features
+
+* expand config for TS, create for Vitest & Playwright ([0e56aee](https://github.com/ArchiTower/eslint-config-architower/commit/0e56aee)), closes [#6](https://github.com/ArchiTower/eslint-config-architower/issues/6)
+
+
+### 🔧 Continuous Integration
+
+* add dependabot ([a3704ca](https://github.com/ArchiTower/eslint-config-architower/commit/a3704ca))
+* add scanning for GHA ([72af19f](https://github.com/ArchiTower/eslint-config-architower/commit/72af19f))
+* clean up mess ([7bb8f37](https://github.com/ArchiTower/eslint-config-architower/commit/7bb8f37))
+* pnpm cache ([6a0d84c](https://github.com/ArchiTower/eslint-config-architower/commit/6a0d84c))
+* replace dependabot with renovate ([cb1b406](https://github.com/ArchiTower/eslint-config-architower/commit/cb1b406))
+* set beta releases from develop ([9d74c39](https://github.com/ArchiTower/eslint-config-architower/commit/9d74c39))
+
 # [1.1.0-beta.11](https://github.com/ArchiTower/eslint-config-architower/compare/v1.1.0-beta.10...v1.1.0-beta.11) (2023-03-24)
 
 
