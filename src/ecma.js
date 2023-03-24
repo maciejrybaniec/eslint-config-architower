@@ -72,5 +72,9 @@ module.exports = {
     "unicorn/prevent-abbreviations": "off",
     // Don't force to use undefined everywhere
     "unicorn/no-null": "warn",
+    // This rule gives nothing
+    "eslint-comments/disable-enable-pair": "off",
+    // This rule not working well with monorepos
+    "unicorn/prefer-node-protocol": "off",
   },
 }

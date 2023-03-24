@@ -3,7 +3,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ["*.html"],
+      files: ["**/*.html"],
       extends: ["plugin:@html-eslint/recommended"],
       parser: "@html-eslint/parser",
     },

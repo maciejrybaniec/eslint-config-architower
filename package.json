@@ -11,6 +11,8 @@
     "./yaml": "./src/yaml.js",
     "./json": "./src/json.js",
     "./vitest": "./src/vitest.js",
+    "./playwright": "./src/playwright.js",
+    "./workers": "./src/workers.js",
     "./markdown": "./src/markdown.js",
     "./prettier": "./src/prettier.js",
     "./typescript": "./src/typescript.js"

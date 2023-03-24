@@ -11,7 +11,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ["*.config.(js|cjs|mjs)", ".eslintrc.(js|cjs)"],
+      files: ["**/*.config.{js,cjs,mjs}", "**/.eslintrc.{js,cjs}"],
       rules: {
         "unicorn/prefer-module": "off",
       },

@@ -3,12 +3,14 @@ module.exports = {
 
   overrides: [
     {
+      files: ["**/*.{ts,tsx,mts,cts}"],
       extends: [
+        // @typescript-eslint config have plugin & parser config inside
         "plugin:@typescript-eslint/recommended",
+        // Must be both, because recommended-requiring-type-checking do not enclose recommended
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:etc/recommended",
       ],
-      files: ["**.ts", "**.tsx"],
-      parser: "@typescript-eslint/parser",
       parserOptions: {
         project: ["./tsconfig.json"],
       },
@@ -28,6 +30,18 @@ module.exports = {
         "etc/no-t": "error",
         "etc/throw-error": "error",
         "etc/underscore-internal": "error",
+      },
+    },
+    {
+      files: ["**/*.d.ts"],
+      rules: {
+        "etc/no-t": "off",
+      },
+    },
+    {
+      files: ["**/*.cts"],
+      rules: {
+        "unicorn/prefer-module": "off",
       },
     },
   ],
