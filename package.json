@@ -44,15 +44,15 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=v14.21.3"
   },
   "prettier": "@architower/prettier-config",
   "dependencies": {
-    "eslint": "^8.36.0",
+    "eslint": "^8.37.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-config-prettier": "^8.8.0",
-    "@typescript-eslint/parser": "^5.56.0",
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-unicorn": "^46.0.0",
     "eslint-plugin-compat": "^4.1.2",
@@ -65,29 +65,29 @@
     "eslint-plugin-no-unsanitized": "^4.0.2",
     "eslint-plugin-sonarjs": "^0.19.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-etc": "^2.0.2",
     "@microsoft/eslint-plugin-sdl": "^0.2.0",
     "eslint-plugin-yml": "^1.5.0",
     "eslint-plugin-write-good-comments": "^0.1.4",
-    "eslint-plugin-vitest": "^0.0.54",
+    "eslint-plugin-vitest": "^0.0.57",
     "eslint-plugin-playwright": "^0.12.0"
   },
   "peerDependencies": {
     "typescript": "^4.0.0 || ^5.0.0",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.7"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.0",
+    "@commitlint/cli": "^17.5.1",
     "commitlint-config-gitmoji": "^2.3.1",
     "lint-staged": "^13.2.0",
-    "prettier": "^2.8.6",
+    "prettier": "^2.8.7",
     "@architower/prettier-config": "^1.0.0",
     "gitmoji-cli": "^8.0.0",
     "husky": "8.0.3",
-    "semantic-release": "^21.0.0",
+    "semantic-release": "^21.0.1",
     "semantic-release-config-gitmoji": "^1.4.3",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.3"
   }
 }
